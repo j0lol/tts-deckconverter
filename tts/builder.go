@@ -63,9 +63,6 @@ func createDeck(deck *plugins.Deck) (SavedObject, string) {
 				UniqueBack:   false,
 				Type:         DeckShapeRectangleRounded,
 			}
-			if !deck.Rounded {
-				customDeck.Type = DeckShapeRectangle
-			}
 		} else {
 			var (
 				templateID int
